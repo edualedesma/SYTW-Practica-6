@@ -19,3 +19,8 @@ desc "Visit the GitHub repo page"
 task :open do
   sh "open https://github.com/crguezl/chat-blazee"
 end
+
+desc "run spec examples"
+task :spec do
+  sh "bundle exec rspec -I. spec/test.rb"
+end
