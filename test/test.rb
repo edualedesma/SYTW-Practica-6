@@ -1,5 +1,7 @@
 require 'capybara' # loading capybara
 require 'capybara/dsl'
+require 'rack/test'
+
 Capybara.default_driver = :selenium 
 
 ENV['RACK_ENV'] = 'test'

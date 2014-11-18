@@ -9,5 +9,7 @@ group :development, :test do
   gem "capybara", ">= 1.1.2"
   gem "selenium-webdriver"
   gem "poltergeist"
+  gem "rack-test"
+  gem "rake"
 end
 
