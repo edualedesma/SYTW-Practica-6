@@ -11,5 +11,6 @@ group :development, :test do
   gem "poltergeist"
   gem "rack-test"
   gem "rake"
+  gem 'coveralls', require: false
 end
 
