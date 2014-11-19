@@ -1,3 +1,4 @@
+// Cuando se pulsa la tecla INTRO, se llama a '/send'
 $('#text').keypress(
   function(e){
     if( e.keyCode==13 ){
@@ -6,6 +7,8 @@ $('#text').keypress(
     } 
   }
 );
+
+//$('#usuarios').html("Usuario1")
 
 (function() {
   var last = 0;
@@ -17,6 +20,15 @@ $('#text').keypress(
           $('#chat').append(response);
         }
       );
+
+      $.get('/pedirusuarios',{last:last},
+        function(response){
+          $("#usuarios").html("");
+          $('#usuarios').html(response);
+        }
+      );
+
     },
   1000);
 })();
+
