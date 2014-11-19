@@ -37,8 +37,8 @@ post '/chat' do
     session[:user] = user
     puts "Este es el usuario de la sesion: #{session[:user]} y de la variable: #{user}"
   #puts "Estos son los usuarios registrados: #{usuarios}"
-  puts "Los usuarios ahora mismo son"
-  puts usuarios
+  #puts "Los usuarios ahora mismo son"
+  #puts usuarios
     erb :index
   end
 end
