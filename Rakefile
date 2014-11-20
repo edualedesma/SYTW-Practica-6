@@ -25,6 +25,11 @@ task :selenium do
   sh "bundle exec rspec -I. test/test.rb"
 end
 
+desc "run spec examples"
+task :spec do
+  sh "bundle exec rspec -I. spec/spec.rb"
+end
+
 desc "Run server"
     task :server do
       sh "rackup"

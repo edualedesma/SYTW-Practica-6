@@ -29,7 +29,7 @@ end
 describe 'make API call to load chat and to found elements' do
   it "should load the chat page" do
     visit "#{urlHer}/chat"
-    expect(page).to have_content("welcome")
+    expect(page).to have_content("Bienvenido")
   end
 end
 
