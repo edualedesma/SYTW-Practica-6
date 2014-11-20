@@ -2,13 +2,13 @@ div#chat {
 	float:left;
 	background-color: #FE2E2E;
 	width: 70%;
-	overflow: scroll;
 	height: 30%;
+	overflow-y: scroll;
 }
 
 div#usuarios {
 	float:left;
-	background-color: #FE642E;
+	background-color: #81BEF7;
 	width: 30%;
 }
 
