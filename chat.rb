@@ -31,7 +31,12 @@ post '/chat' do
   #puts "Dentro de los parametros: #{params}"
   user = URI::parse(params[:usuario]).to_s
   if (usuarios.include?(user))
+    session[:warning] = "Ya existe ese nombre de usuario."
+    enviar = "<p>Ya existe ese nombre de usuario.</p>"
+
     redirect '/'
+    enviar.to_s
+
   else
     usuarios.push(user)
     session[:user] = user
@@ -51,9 +56,11 @@ end
 
 get '/send' do
   return [404, {}, "Not an ajax request"] unless request.xhr?
-  chat << ("<hr>" + "#{session[:user]} : #{params['text']}")
-  #chat << ("<hr>" + "#{request.ip} : #{params['text']}")
-  nil
+  #chat << ("<hr>" + "#{session[:user]} : #{params['text']}")
+  #nil
+  if params['text'] != ""
+      chat << "<strong id ='#{session[:user]}'>#{session[:user]} </strong>  : #{params['text']}"
+    end
 end
 
 get '/pedirusuarios' do
