@@ -18,6 +18,15 @@ Chat usando Ajax y JQuery que cumple los siguientes requisitos:
 * Análisis de Cubrimiento.
 * Despliegue en Heroku.
 
+###Enlaces
+
+
+#### Coveralls:
+[![Coverage Status](https://coveralls.io/repos/alu3286/SYTW-Practica-6/badge.png?branch=test)](https://coveralls.io/r/alu3286/SYTW-Practica-6?branch=test)
+
+#### Travis: 
+[![Build Status](https://travis-ci.org/alu3286/SYTW-Practica-6.svg?branch=master)](https://travis-ci.org/alu3286/SYTW-Practica-6)
+
 ###Instalación
 
 Lo primero que haremos será clonar el repositorio de github SYTW-Practica-6 de la siguiente forma: `git clone git@github.com:alu3286/SYTW-Practica-6.git`.
