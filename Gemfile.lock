@@ -99,5 +99,6 @@ DEPENDENCIES
   rake
   rspec (>= 1.2.1)
   selenium-webdriver
+  sinatra
   sinatra-contrib
   thin
