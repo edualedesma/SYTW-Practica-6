@@ -1,6 +1,6 @@
 div#chat {
 	float:left;
-	background-color: red;
+	background-color: #FE2E2E;
 	width: 70%;
 	overflow: scroll;
 	height: 30%;
@@ -8,7 +8,7 @@ div#chat {
 
 div#usuarios {
 	float:left;
-	background-color: yellow;
+	background-color: #FE642E;
 	width: 30%;
 }
 
