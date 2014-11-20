@@ -24,3 +24,8 @@ desc "run selenium-capybara examples"
 task :selenium do
   sh "bundle exec rspec -I. test/test.rb"
 end
+
+desc "Run server"
+    task :server do
+      sh "rackup"
+end
