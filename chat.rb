@@ -51,7 +51,7 @@ end
 
 get '/send' do
   return [404, {}, "Not an ajax request"] unless request.xhr?
-  chat << "#{request.ip} : #{params['text']}"
+  chat << ("#{request.ip} : #{params['text']}" + "<hr>")
   nil
 end
 

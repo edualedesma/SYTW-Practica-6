@@ -8,8 +8,6 @@ $('#text').keypress(
   }
 );
 
-//$('#usuarios').html("Usuario1")
-
 (function() {
   var last = 0;
   setInterval(
