@@ -6,3 +6,6 @@ before_install:
 #  - sleep 3
 #  - bundle exec rake server & 
 #  - sleep 1 
+branches:
+  only:
+    - selenium
