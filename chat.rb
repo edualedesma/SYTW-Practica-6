@@ -6,7 +6,7 @@ require 'uri'
 #set :environment, :production
 
 
-chat = ['welcome..']
+chat = ['Bienvenido...']
 
 usuarios = []
 
@@ -51,7 +51,8 @@ end
 
 get '/send' do
   return [404, {}, "Not an ajax request"] unless request.xhr?
-  chat << ("#{request.ip} : #{params['text']}" + "<hr>")
+  chat << ("<hr>" + "#{session[:user]} : #{params['text']}")
+  #chat << ("<hr>" + "#{request.ip} : #{params['text']}")
   nil
 end
 

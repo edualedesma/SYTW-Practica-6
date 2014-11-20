@@ -8,6 +8,19 @@ $('#text').keypress(
   }
 );
 
+function enviar()
+{
+  if ($('#text').val() != '')
+  {
+    $.get('/send',{text:$('#text').val()});
+    $('#text').val('');
+  }
+}
+/*$('#enviar').click(
+  $.get('/send',{text:$('#text').val()});
+  $('#text').val('');
+);*/
+
 (function() {
   var last = 0;
   setInterval(
