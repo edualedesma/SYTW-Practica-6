@@ -40,6 +40,21 @@ describe "Rspec" do
 		last_response.body['Eduardo']
 	end
 
+	it '/ coincidencia de nombre 3' do
+		get '/'
+		last_response.body['Sergio']
+	end
+
+	it '/ coincidencia de nombre 3' do
+		get '/'
+		last_response.body['y']
+	end
+
+	it '/chat coincidencia de nombre 3' do
+		get '/'
+		last_response.body['Usuarios conectados']
+	end
+
 	it 'post' do
 		post '/', params = {:usuario => 'Sergio'}
 		get '/chat'
