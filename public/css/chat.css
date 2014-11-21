@@ -1,12 +1,7 @@
 html,
 body {
-  height: 100%;
-  /*background-color: #00DFFC !important;*/
-
-background: ##1c493b; 
-background-image: url("../img/zenbg-1.png"), url("../img/zenbg-2.png");
-background-repeat: repeat-x, repeat;
-
+	height: 100%;
+  	background-color: #242333 !important;
 }
 
 div#chat {
@@ -46,7 +41,9 @@ div#chat {
 }
 
 a {
-	display:block;
+	/*display:block;*/
+	color: #fff !important;
+
 }
 
 #text {
@@ -76,12 +73,25 @@ div#contenedor {
 }
 
 #logout {
-	text-align: right;
+	text-align: right !important;
 	margin-right: 20px;
 	color:grey;
 	font-size:20px;
+	display: block;
 }
 
 .usuario-mensaje {
 	font-style: italic;
+}
+
+.foot {
+	text-align: center;
+	margin:auto;
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.foot p {
+	color: grey;
 }
