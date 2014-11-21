@@ -30,13 +30,29 @@ describe "Rspec" do
 		expect(last_response).to be_ok
 	end
 
-	it "/" do
+	it "/ coincidendia de nombre 1" do
 		get '/'
-		last_response.body['Login']
+		last_response.body['Tu Chat']
 	end	
 
+	it '/ coincidencia de nombre 2' do
+		get '/'
+		last_response.body['Eduardo']
+	end
+
+	it 'post' do
+		post '/', params = {:usuario => 'Sergio'}
+		get '/chat'
+		last_response.body['Diseñado']
+	end
+
+	it '/chat' do
+		get '/chat'
+		last_response.body['Bienvenido']
+	end
+
     it "/send" do
-       get '/send', {}, 'rack.session' => { :name => 'Testing' }
+       get '/send'
        expect(last_response.body).to eq("Not an ajax request")
     end
     
@@ -50,13 +66,13 @@ describe "Rspec" do
 	    expect(last_response).to be_ok
 	end
 
-    it "HTTP_X_REQUESTED_WITH Update" do
+
+    it "HTTP_X_REQUESTED_WITH de Update" do
 		get '/update',{}, {"HTTP_X_REQUESTED_WITH" => "XMLHttpRequest"}
 		expect(last_response).to be_ok
 	end
 	
 
-	
 
 end
 
