@@ -21,13 +21,13 @@ describe "Rspec" do
 
 
     it "/update" do
-		get '/update'
+		get '/update' 
 		expect(last_response.body).to eq("Not an ajax request")
 	end
 
 	it "/" do
-		get '/'
-		expect(last_response).to be_ok
+		post '/chat', params = {:usuario => 'Sergio'}
+        expect(last_response).to be_ok
 	end
 
 	it "/ coincidendia de nombre 1" do
@@ -45,6 +45,10 @@ describe "Rspec" do
 		last_response.body['Sergio']
 	end
     
+    it '/' do
+		post '/'
+		last_response.body['Sergio']
+	end
 
     it "sesión" do
        get '/', {}, 'rack.session' => { :usuario => 'Eduardo' }
