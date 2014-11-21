@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Sytw-practica-6 : Chat usando Ajax y JQuery.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Sytw-practica-6</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/alu3286/SYTW-Practica-6">View on GitHub</a>
+
+          <h1 id="project_title">Sytw-practica-6</h1>
+          <h2 id="project_tagline">Chat usando Ajax y JQuery.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/alu3286/SYTW-Practica-6/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/alu3286/SYTW-Practica-6/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="sistemas-y-tecnologías-web---práctica-6-chat-usando-ajax-y-jquery" class="anchor" href="#sistemas-y-tecnolog%C3%ADas-web---pr%C3%A1ctica-6-chat-usando-ajax-y-jquery" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sistemas y Tecnologías Web - Práctica 6: Chat usando Ajax y JQuery</h1>
+
+<p><strong>Autores: Eduardo Javier Acuña Ledesma | Sergio Díaz González</strong></p>
+
+<h3>
+<a id="descripción" class="anchor" href="#descripci%C3%B3n" aria-hidden="true"><span class="octicon octicon-link"></span></a>Descripción</h3>
+
+<p>Chat usando Ajax y JQuery que cumple los siguientes requisitos:</p>
+
+<ul>
+<li>Los usuarios deberán registrarse.</li>
+<li>Si el nombre del usuario esta tomado se señalara el error y se le pedirá que cambie de nombre.</li>
+<li>Una vez en el chat:
+
+<ul>
+<li>En un contenedor aparecen los nombres de usuario.</li>
+<li>En otro los mensajes.</li>
+<li>En un tercero con un botón send la entrada para el siguiente mensaje del usuario.</li>
+</ul>
+</li>
+<li>Escriba las pruebas. Use Selenium.</li>
+<li>Despliegue las pruebas en Travis.</li>
+<li>Haga un análisis de cubrimiento usando Coveralls.</li>
+<li>Análisis de Cubrimiento.</li>
+<li>Despliegue en Heroku.</li>
+</ul>
+
+<h3>
+<a id="enlaces" class="anchor" href="#enlaces" aria-hidden="true"><span class="octicon octicon-link"></span></a>Enlaces</h3>
+
+<h4>
+<a id="coveralls" class="anchor" href="#coveralls" aria-hidden="true"><span class="octicon octicon-link"></span></a>Coveralls:</h4>
+
+<p><a href="https://coveralls.io/r/alu3286/SYTW-Practica-6?branch=test"><img src="https://coveralls.io/repos/alu3286/SYTW-Practica-6/badge.png?branch=test" alt="Coverage Status"></a></p>
+
+<h4>
+<a id="travis" class="anchor" href="#travis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Travis:</h4>
+
+<p><a href="https://travis-ci.org/alu3286/SYTW-Practica-6"><img src="https://travis-ci.org/alu3286/SYTW-Practica-6.svg?branch=master" alt="Build Status"></a></p>
+
+<h3>
+<a id="instalación" class="anchor" href="#instalaci%C3%B3n" aria-hidden="true"><span class="octicon octicon-link"></span></a>Instalación</h3>
+
+<p>Lo primero que haremos será clonar el repositorio de github SYTW-Practica-6 de la siguiente forma: <code>git clone git@github.com:alu3286/SYTW-Practica-6.git</code>.</p>
+
+<p>Instalaremos las gemas necesarias: <code>bundle install</code></p>
+
+<p>Luego ejecutaremos en local, escribiendo <code>rake</code>en la consola.</p>
+
+<p>Por último, iremos a http://localhost:4567/ para poder usar la aplicación.</p>
+
+<h3>
+<a id="visualización-en-heroku" class="anchor" href="#visualizaci%C3%B3n-en-heroku" aria-hidden="true"><span class="octicon octicon-link"></span></a>Visualización en Heroku</h3>
+
+<p>También puedes ver la aplicación en Heroku pinchando <a href="http://">aquí</a>.</p>
+
+<h3>
+<a id="comprobación-de-los-tests" class="anchor" href="#comprobaci%C3%B3n-de-los-tests" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comprobación de los tests</h3>
+
+<p>Para comprobar los test ejecutar en terminal <code>rake tests</code>.</p>
+
+<p>Para comprobar test de los gráficos de estadísticas <code>rake test_estadisticas</code>.</p>
+
+<h1>
+<a id="referencias" class="anchor" href="#referencias" aria-hidden="true"><span class="octicon octicon-link"></span></a>Referencias</h1>
+
+<p>Ver</p>
+
+<ul>
+<li><a href="http://datamapper.org/getting-started.html">DataMapper</a></li>
+<li><a href="http://haml.info/">Haml</a></li>
+<li><a href="http://www.sinatrarb.com/">Sinatra</a></li>
+<li>
+<a href="https://devcenter.heroku.com/articles/rack">Deploying Rack-based Apps in Heroku</a> y <a href="http://nereida.deioc.ull.es/%7Elpp/perlexamples/node483.html#section:herokupostgres">Casiano Docs</a>
+</li>
+<li><a href="https://github.com/intridea/omniauth">Intridea Omniauth</a></li>
+<li><a href="https://github.com/ankane/chartkick">Chartkick</a></li>
+</ul>
+
+<p><em>Sistemas y Tecnologías Web - Eduardo Javier Acuña Ledesma | Sergio Díaz González</em></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Sytw-practica-6 maintained by <a href="https://github.com/alu3286">alu3286</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
