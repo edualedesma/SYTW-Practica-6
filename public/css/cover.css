@@ -110,6 +110,11 @@ body {
   margin-top: 5px;
 }
 
+#usuario {
+  width: 50%;
+  margin: auto;
+}
+
 /*
  * Cover
  */
