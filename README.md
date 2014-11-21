@@ -22,7 +22,7 @@ Chat usando Ajax y JQuery que cumple los siguientes requisitos:
 
 
 #### Coveralls:
-[![Coverage Status](https://coveralls.io/repos/alu3286/SYTW-Practica-6/badge.png?branch=test)](https://coveralls.io/r/alu3286/SYTW-Practica-6?branch=test)
+[![Coverage Status](https://coveralls.io/repos/alu3286/SYTW-Practica-6/badge.png?branch=master)](https://coveralls.io/r/alu3286/SYTW-Practica-6?branch=test)
 
 #### Travis: 
 [![Build Status](https://travis-ci.org/alu3286/SYTW-Practica-6.svg?branch=master)](https://travis-ci.org/alu3286/SYTW-Practica-6)
@@ -39,12 +39,12 @@ Por último, iremos a http://localhost:4567/ para poder usar la aplicación.
 
 
 ###Visualización en Heroku
-También puedes ver la aplicación en Heroku pinchando [aquí](http://).
+También puedes ver la aplicación en Heroku pinchando [aquí](https://michatajax.herokuapp.com/).
 
 ###Comprobación de los tests
-Para comprobar los test ejecutar en terminal `rake tests`.
+Para comprobar los test con selenium ejecutar en terminal `rake selenium`.
 
-Para comprobar test de los gráficos de estadísticas `rake test_estadisticas`.
+Para comprobar test rspec `rake spec`.
 
 
 # Referencias
