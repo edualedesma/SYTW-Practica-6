@@ -44,6 +44,13 @@ describe "Rspec" do
 		get '/'
 		last_response.body['Sergio']
 	end
+    
+
+    it "sesión" do
+       get '/', {}, 'rack.session' => { :usuario => 'Eduardo' }
+       expect(last_response).to be_ok
+    end
+
 
 	it '/ coincidencia de nombre 3' do
 		get '/'
