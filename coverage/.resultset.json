@@ -2,7 +2,7 @@
   "Unit Tests": {
     "coverage": {
     },
-    "timestamp": 1416559699
+    "timestamp": 1418042521
   },
   "RSpec": {
     "coverage": {
@@ -99,6 +99,6 @@
         null
       ]
     },
-    "timestamp": 1416564213
+    "timestamp": 1418927504
   }
 }

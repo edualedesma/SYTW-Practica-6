@@ -20,7 +20,9 @@ end
 urlHer = 'https://michatajax.herokuapp.com'
 
 describe 'make API call to load path', :type => :feature do 
+  puts "hola"
   it "should load the home page" do
+    puts "dentro"
     visit "#{urlHer}"
     expect(page).to have_content("Regístrate")
   end
